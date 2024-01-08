@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIG BOOK</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 75px;
+            margin-bottom: 60px;
+        }
+
+        .clickable-tiles {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .clickable-tile {
+            width: 300px;
+            height: 150px;
+            background-color: #3498db;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+
+        .clickable-tile:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            color: white;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heading -->
+    <h1>BIG BOOKS</h1>
+
+    <!-- Clickable Tiles -->
+    <div class="clickable-tiles">
+        <!-- Tile 1 -->
+        <div class="clickable-tile" onclick="openPage('hatiochadhei.html')"> 
+            <img src="hatiochadhei.jpg" alt="Tile 1">
+            <p>ହାତୀ ଓ ଚଢେଇ</p>
+        </div>
+
+        <!-- Tile 2 -->
+        <div class="clickable-tile" onclick="openPage('page2.html')"> 
+            <img src="demo1.jpg" alt="Tile 2">
+            <p>Tile 2</p>
+        </div>
+
+        <!-- Tile 3 -->
+        <div class="clickable-tile" onclick="openPage('page3.html')"> 
+            <img src="demo2.jpg" alt="Tile 3">
+            <p>Tile 3</p>
+        </div>
+    </div>
+
+    <!-- JavaScript to Open New Pages -->
+    <script>
+        function openPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>
